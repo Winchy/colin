@@ -7,9 +7,74 @@
     <title>Colin's Land</title>
 
     <style type="text/css">
+        html, body, h1, div, span, h3{
+            margin: 0;
+        }
+        .container {
+        }
         .main_header {
+            margin-top: 40px;
+            width: 100%;
+            height: 150px;
             background: url(imgs/header.jpg) no-repeat;
-            background-size: 100%;
+            background-size: auto 100%;
+            box-shadow: 0px 1px 5px 0;
+        }
+        .title {
+            background-color: rgba(255, 255, 255, 0.4);
+            width: 50%;
+            height: 100%;
+            float: right;
+            text-align: right;
+        }
+        .main_title {
+            font-family: monospace;
+            font-size: 20px;
+            margin: 50px 5px 10px 0;
+        }
+        .sub_title {
+            font-size: 14px;
+        }
+        .content {
+            padding: 0 20px;
+            margin: 20px 0;
+        }
+        .article_block {
+            margin: 15px 0;
+            box-shadow: gray 1px 1px 3px 1px;
+            height: 200px;
+            background: url(imgs/header.jpg) no-repeat;
+            background-size: auto 100%;
+        }
+        .article_title {
+            margin: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px 10px;
+            font-size: 14px;
+        }
+        .article_text {
+            display: block;
+            position: relative;
+            left: 23%;
+            top: -45px;
+            height: 50px;
+            vertical-align: middle;
+            font-size: 12px;
+            width: 77%;
+            color: #333;
+        }
+        .footer {
+            display: table;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .footer_link {
+            display: table-cell;
+            width: 33%;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
@@ -17,14 +82,49 @@
 <body>
     <div class="container">
         <header class="main_header">
-            
+            <div class="title"> 
+                <h1 class="main_title">Colin's Land</h1>
+                <h3 class="sub_title">只是习惯一个人玩罢了</h3>
+            </div>
         </header>
 
-        <div class="content">
+        <section class="content">
+            <article class="article_block">
+                <div class="article_content">
+                    <h4 class="article_title">敦煌</h4>
+                    <span class="article_text">敦煌是一个神奇的地方，特别是那沙漠，仿佛另一个世界。</span>
+                </div>
+            </article>
+            <article class="article_block" style="background:url(imgs/xiapu1.jpg) no-repeat; background-size: 100% 100%;">
+                <div class="article_content">
+                    <h4 class="article_title">霞浦</h4>
+                    <span class="article_text">敦煌是一个神奇的地方，特别是那沙漠，仿佛另一个世界。</span>
+                </div>
+            </article>
+            <article class="article_block">
+                <div class="article_content">
+                    <h4 class="article_title">敦煌</h4>
+                    <span class="article_text">敦煌是一个神奇的地方，特别是那沙漠，仿佛另一个世界。</span>
+                </div>
+            </article>
+            <article class="article_block">
+                <div class="article_content">
+                    <h4 class="article_title">敦煌</h4>
+                    <span class="article_text">敦煌是一个神奇的地方，特别是那沙漠，仿佛另一个世界。</span>
+                </div>
+            </article>
+            <article class="article_block">
+                <div class="article_content">
+                    <h4 class="article_title">敦煌</h4>
+                    <span class="article_text">敦煌是一个神奇的地方，特别是那沙漠，仿佛另一个世界。</span>
+                </div>
+            </article>
+        </section>
 
-        </div>
-
-        <footer>
+        <footer class="footer">
+            <div class="footer_link">HOME</div>
+            <div class="footer_link">ME</div>
+            <div class="footer_link">WORK</div>
         </footer>
     </div>
 </body>
